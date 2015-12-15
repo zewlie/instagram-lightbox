@@ -1,0 +1,182 @@
+/* Instagram Lightbox CSS */
+
+/* ==========  Google Web Fonts  ========== */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);
+
+/* ==========  Main Content & General Purpose  ========== */
+html {
+    -webkit-box-shadow: inset 0px 0px 300px 0px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 0px 300px 0px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 300px 0px rgba(0,0,0,1);
+}
+
+body {
+    background: url('./../img/bg.png');
+    height: 1000px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: #bcd8bb;
+    font-family: 'Shadows Into Light Two';
+    font-size: 100%;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+    color: #f9aeae;
+}
+
+h1 {
+    font-size: 300%;
+    font-weight: 300;
+    text-transform: lowercase;
+    color: #99B898;
+}
+
+.container {
+    z-index: 100;
+    padding-top: 100px;
+    width: 50%;
+    margin: 0 25%;
+}
+
+.hidden {
+    display: none;
+}
+
+.large-btn {
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    background: #00A0B0;
+    padding: 15px 30px;
+    border: 0;
+}
+
+.large-btn:hover {
+    background: #f68b8b;
+}
+
+.large-btn:focus {
+    outline: none;
+}
+
+/* ==========  Modal & Images  ========== */
+
+#blackout-screen {
+    z-index: 100;
+    background: rgba(0,0,0,0.35);
+    width: 100%;
+    height: 150%;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+}
+
+#modal-container {
+    z-index: 1000;
+    position: relative;
+    padding-top: 50px;
+    margin: auto;
+    margin-bottom: -550px;
+    height: 550px;
+    width: 500px;
+}
+
+.modal {
+    height: 480px;
+    width: 500px;
+    padding-top: 20px;
+    margin: auto;
+    background: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0px 0px 100px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: inset 0px 0px 100px 0px rgba(0,0,0,0.4);
+    box-shadow: inset 0px 0px 100px 0px rgba(0,0,0,0.4);
+}
+
+#kill-modal {
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin: -5px -5px 0 0;
+    opacity: 0.8;
+}
+
+#kill-modal img {
+    height: 40px;
+    width: 40px;
+}
+
+#lightbox-img {
+    width: 460px;
+    height: 460px;
+    margin: auto;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    -webkit-box-shadow: inset 0px 0px 100px 0px rgba(0,0,0,0.8);
+    -moz-box-shadow: inset 0px 0px 100px 0px rgba(0,0,0,0.8);
+    box-shadow: inset 0px 0px 100px 0px rgba(0,0,0,0.8);
+    background-size: cover;
+}
+
+#img-title {
+    width: 90%;
+    height: 15%;
+    float: left;
+    background: -moz-linear-gradient(left, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
+}
+
+#title-text {
+    font-family: 'Shadows Into Light Two', serif;
+    font-size: 105%;
+    letter-spacing: 0.1em;
+    padding: 5px 25px;
+    margin: 0;
+    float: left;
+    color: rgba(255,255,255,0.9);
+    background: rgba(0,0,0,0.4);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+/* ==========  Modal Navigation  ========== */
+
+.arrow {
+    width: 70px;
+    height: 70px;
+    padding: 130px 10px 0 10px;
+    opacity: 0.35;
+}
+
+.arrow:hover {
+    opacity: 0.7;
+}
+
+.subtle-arrow {
+    width: 70px;
+    height: 70px;
+    padding: 130px 10px 0 10px;
+    opacity: 0.1;   
+}
+#left-nav {
+    float: left;
+}
+
+#right-nav {
+    float: right;
+}

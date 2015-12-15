@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Instagram Lightbox</title>
+    <link rel='stylesheet' type='text/css' href='./static/css/style.css'>
+  </head>
+  <body>
+    <!-- Blackout Screen -->
+    <div id='blackout-screen' class='hidden'></div>
+
+    <!-- BEGIN Modal -->
+    <div id='modal-container' class='hidden'>
+        <div id='kill-modal'>
+            <img src='./static/img/kill-modal.png'>
+        </div>
+        <div id='lightbox-view' class='modal'>
+            <div id='lightbox-img' class='nav-container'>
+                <div id='img-title'>
+                    <p id='title-text'></p>
+                </div>
+                <div id='left-nav'>
+                    <img src='./static/img/left-arrow.png' id='left-arrow' class='arrow'>
+                </div>
+                <div id='right-nav'>
+                    <img src='./static/img/right-arrow.png' id='right-arrow' class='arrow'>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Modal -->
+
+    <!-- BEGIN Main Content -->
+    <div class='container'>
+        <h1>Instagram Lightbox</h1>
+        <input type='submit' id='launch-btn' class='large-btn' value='click here'>
+        <br /><br />
+        <p><a href='https://api.instagram.com/oauth/authorize/?client_id=dfa54ccd36744af58d148786736907e8&redirect_uri=http://masonhartman.com/lightbox/index.html&scope=public_content&response_type=token'>
+            (Wanna see your own Instagram photos? Click here!)</a></p>
+    </div>
+    <!-- END Main Content -->
+
+        <script src='./static/js/lightbox.js'></script>
+
+  </body>
+</html>
