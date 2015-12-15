@@ -100,7 +100,6 @@ function fixedModulus(a, b) {
 // Displays the next image when arrows are clicked or arrow keys are pressed.
 // Images will loop in both directions.
 function viewNextImg(evt) {
-    console.log(evt);
     if (evt.keyCode == '37' || this.id == 'left-arrow') {
         iActiveImg = fixedModulus(iActiveImg - 1, images.length);
     } else if (evt.keyCode == '39' || this.id == 'right-arrow') {
